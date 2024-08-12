@@ -1,10 +1,7 @@
-import logo from './assets/logo.png'
-import './App.css'
+import './styles.css'
 
 function App() {
-
-  
- /*
+    /*
   FELADAT
 
   Két részből áll a feladat, melyek egymás alatt helyezkedjenek majd el a TODO helyén.
@@ -23,17 +20,15 @@ function App() {
   
  */
 
+    return (
+        <>
+            <div className="header">
+                <h2 className="headerItem">MVM Informatika</h2>
+            </div>
 
-  return (
-    <>
-      <div className='header'>
-          <img className='headerItem' src={logo} alt="MVM logo" /> <h2 className='headerItem'>Informatika</h2>
-      </div>
-      <div className='content'>
-          TODO
-      </div>
-    </>
-  )
+            <div className="content">TODO</div>
+        </>
+    )
 }
 
 export default App
